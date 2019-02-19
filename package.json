@@ -14,7 +14,10 @@
   "author": "Will Sokolowski",
   "license": "ISC",
   "dependencies": {
+    "compression": "^1.7.3",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
+    "helmet": "^3.15.1",
     "nodemon": "^1.18.10",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
