@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import '../../assets/css/style.css';
 
 
@@ -53,6 +54,10 @@ export default class App extends Component {
       
       return (
         <div className="container">
+        <Helmet>
+          <title>Elevate Graph - Feed</title>
+          <meta name="description" content="Newsfeed of all your friends at Elevate" />
+        </Helmet>
         <div className="postForm">
           <form onSubmit={this.handleSubmit}>
             <textarea value={postContent} onChange={this.handlePostContentChange} placeholder="Write your post!" />
