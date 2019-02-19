@@ -6,6 +6,9 @@ import compress from 'compression';
 
 const app = express();
 
+app.use(compress());
+app.use(cors());
+
 app.use(helmet());
 app.use(helmet.contentSecurityPolicy({
   directives: {
